@@ -14,15 +14,11 @@ const Catalog = ({ items, addItem, headerText }) => {
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    items: state.catalogItems
-  };
-};
+const mapStateToProps = state => ({
+  items: state.catalogItems
+});
 
-const mapDispatchToProps = {
-  addItem: addItem
-};
+const mapDispatchToProps = { addItem: addItem };
 
 export default connect(
   mapStateToProps,

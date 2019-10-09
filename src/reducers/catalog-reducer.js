@@ -22,7 +22,3 @@ export default (state = initialState(), action = { type: undefined }) => {
       return state;
   }
 };
-
-export const VOWEL_TYPE = 1;
-export const CONSO_TYPE = 2;
-export const OTHER_TYPE = 3;
